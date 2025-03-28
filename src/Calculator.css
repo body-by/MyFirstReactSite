@@ -1,0 +1,135 @@
+/* Общие стили */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Темные и светлые темы */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --btn-bg: #007bff;
+    --btn-hover: #0056b3;
+    --btn-equal: #28a745;
+    --btn-clear: #dc3545;
+    --btn-delete: #6c757d;
+  }
+  
+  .dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #f8f9fa;
+    --btn-bg: #1f6feb;
+    --btn-hover: #184db8;
+    --btn-equal: #1aa12d;
+    --btn-clear: #c82333;
+    --btn-delete: #495057;
+  }
+  
+  /* Стиль калькулятора */
+  .calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .dark-mode .calculator {
+    background: #2c2c2c;
+  }
+  
+  /* Дисплей */
+  .display {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .dark-mode .display {
+    background: #444;
+  }
+  
+  /* Кнопки */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  
+  .button:hover {
+    filter: brightness(1.2);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Цвета кнопок */
+  .btn-number {
+    background: var(--btn-bg);
+    color: white;
+  }
+  
+  .btn-number:hover {
+    background: var(--btn-hover);
+  }
+  
+  .btn-operator {
+    background: #ffa500;
+    color: white;
+  }
+  
+  .btn-operator:hover {
+    background: #e69500;
+  }
+  
+  .btn-equal {
+    background: var(--btn-equal);
+    color: white;
+  }
+  
+  .btn-equal:hover {
+    background: #218838;
+  }
+  
+  .btn-clear {
+    background: var(--btn-clear);
+    color: white;
+  }
+  
+  .btn-clear:hover {
+    background: #c82333;
+  }
+  
+  .btn-delete {
+    background: var(--btn-delete);
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background: #5a6268;
+  }
+  
